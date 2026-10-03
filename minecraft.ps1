@@ -4,7 +4,7 @@
 $UserName = "MinecraftService"
 $Password = ConvertTo-SecureString "ChangeThisPassword123!" -AsPlainText -Force
 $DirectoryPath = "C:\MinecraftServer"
-$BatchPath = Join-Path$DirectoryPath "start_server.bat"
+$BatchPath = Join-Path -Path$DirectoryPath -ChildPath "start_server.bat"
 $TaskName = "MinecraftServerService"
 
 # 2. Create Service User Account
